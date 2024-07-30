@@ -37,7 +37,8 @@ app.use('/', require('./routes/root'));
 app.use('/auth', require('./routes/auth'));
 app.use('/profile', require('./routes/profile'));
 app.use('/logout', require('./routes/logout'));
-app.use('/youtube', require('./routes/youtube'));
+app.use('/quizzes', require('./routes/quiz'));
+app.use('/courses', require('./routes/courses'));
 
 // Start Server
 const PORT = process.env.PORT || 5000;
