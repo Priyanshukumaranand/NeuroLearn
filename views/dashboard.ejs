@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroLearn</title>
+  <!-- Linking Google Font Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/logowhite.png" href="../Home/Home.html">
+            <p>NeuroLearn</p>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Features</a></li>
+                <li><a href="/Courses">Courses</a></li>
+                <!-- <li><a href="#" class="icon"><i class="fa-solid fa-user"></i></a></li> -->
+
+                <li class="icon dropdown">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Dashboard</a>
+                        <a href="/edit">Settings</a>
+                        <a href="/logout">Log Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="menubtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="../assets/logowhite.png" alt="logo" />
+      <!-- <h2>NeuroLearn</h2> -->
+    </div>
+    <ul class="sidebar-links">
+      <h4>
+        <span>Main Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
+      </li>
+      <li>
+        <a href="/"><span class="material-symbols-outlined"> monitoring </span>Home</a>
+      </li>
+      <h4>
+        <span>General</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="/courses"><span class="material-symbols-outlined"> folder </span>Courses</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> groups </span>Assessment</a>
+      </li>
+      <!-- <li>
+        <a href="#"><span class="material-symbols-outlined"> flag </span>All Reports</a>
+      </li> -->
+      <h4>
+        <span>Account</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> account_circle </span>Profile</a>
+      </li>
+      <li>
+        <a href="/edit"><span class="material-symbols-outlined"> settings </span>Settings</a>
+      </li>
+      <li>
+        <a href="/logout"><span class="material-symbols-outlined"> logout </span>Logout</a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+   <section class="profile-card">
+  <div class="card">
+    <div class="left-container">
+      <img src="<%= details.avatar ? details.avatar : "../assets/DP.jpeg" %>" alt="Profile Image">
+      <h2 class="gradienttext"><%= details.name ? details.name : "NA" %></h2>
+      <p>Web Developer</p>
+      <div class="icon">
+        <a href="#"> <i class="fa-brands fa-github" ></i></a>
+        <a href="#"> <i class="fa-brands fa-linkedin" ></i></a>
+        <a href="#"> <i class="fa-brands fa-discord"></i></a>
+     </div>
+    </div>
+    <div class="right-container">
+      <h3 class="gradienttext">PROFILE DETAILS</h3>
+      <table>
+          <tr>
+              <td>Name : </td>
+             <td><%= details.name ? details.name : "" %></td>
+            </tr>
+        <tr>
+          <td>Studing :</td>
+          <td><%= details.studying ? details.studying : "Computer Science" %></td>
+        </tr>
+        <tr>
+          <td>Mobile :</td>
+          <td><%= details.phoneno ? details.phoneno : "+91 XXXXXXXXXX" %></td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td><%= details.email ? details.email : "" %></td>
+        </tr>
+        </tr>
+        <tr>
+          <td>Address :</td>
+          <td><%= details.address ? details.address : "IIIT,Bhubaneswar." %></td>
+        </tr>
+      </table>
+  </div>
+</div>
+</section>
+
+<section class="skills" id="skills">
+    <h3 class="skills-header">MY SKILLS</h3>
+    <div class="skills-container">
+        <div class="skill-container">
+            <p>HTML</p>
+            <div class="percentage html-percentage">90%</div>
+            <div class="bar">
+                <span class="html"></span>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>CSS</p>
+            <div class="percentage css-percentage">90%</div>
+            <div class="bar">
+                <span class="css"></span>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>JavaScript</p>
+            <div class="percentage javascript-percentage">80%</div>
+            <div class="bar">
+                <span class="javascript"></span>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>React.JS</p>
+            <div class="percentage react-percentage">70%</div>
+            <div class="bar">
+                <span class="react"></span>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>Node.JS</p>
+            <div class="percentage node-percentage">50%</div>
+            <div class="bar">
+                <span class="node"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="skill_assessment">
+  <h1>SKILL ASSESSMENT</h1>
+  <div class="description">
+		
+		<div class="col-1">
+		<div class="boxes-row">
+			<div class="balance-box">
+				<div class="subject-row">
+					<div class="text">
+						<h3>Performance Improved</h3>
+						<h1>91<sub>(%)</sub></h1>
+					</div>
+					<div class="icon">
+						<i class="fa-solid fa-arrow-up"></i>
+					</div>
+				</div>
+				<div class="progress-row">
+					<div class="subject">progress</div>
+					<div class="progress-bar">
+						<div class="progress-line" value="91%" style="max-width: 91%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="balance-box">
+				<div class="subject-row">
+					<div class="text">
+						<h3>Performance Decreased</h3>
+						<h1>73<sub>(%)</sub></h1>
+					</div>
+					<div class="icon">
+						<i class="fa-solid fa-arrow-down"></i>
+					</div>
+				</div>
+				<div class="progress-row">
+					<div class="subject">progress</div>
+					<div class="progress-bar">
+						<div class="progress-line" value="73%" style="max-width: 73%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="chart">
+			<div class="chart-header">
+				<h2>Assessment Analysis</h2>
+				<input type="month" class="date" value="2023-12">
+			</div>
+			<div class="chart-contents">
+				<section class="chart-grid">
+					<div class="grid-line" value="100%"></div>
+					<div class="grid-line" value="80%"></div>
+					<div class="grid-line" value="60%"></div>
+					<div class="grid-line" value="40%"></div>
+					<div class="grid-line" value="20%"></div>
+					<div class="grid-line" value="0%"></div>
+				</section>
+				<section class="chart-value-wrapper">
+					<div class="chart-value" style="max-height: 62%"></div>
+					<div class="chart-value" style="max-height: 76%"></div>
+					<div class="chart-value" style="max-height: 70%"></div>
+					<div class="chart-value" style="max-height: 82%"></div>
+					<div class="chart-value" style="max-height: 78%"></div>
+					<div class="chart-value" style="max-height: 94%"></div>
+				</section>
+				<section class="chart-labels">
+					<div>Jul</div>
+					<div>Aug</div>
+					<div>Sep</div>
+					<div>Oct</div>
+					<div>Nov</div>
+					<div>Dec</div>
+				</section>
+			</div>
+		</div>
+	
+		</div>
+		
+		<div class="col-2">
+			
+			<div class="balance-card">
+				<div class="balance-card-top">
+					<div class="text">
+						<h3>Overall Progress</h3>
+						<h1>93<sub>(%)</sub></h1>
+					</div>
+					<div class="icon">
+						<i class="fa-solid fa-arrow-up"></i>
+					</div>
+				</div>
+				<div class="balance-card-middle">
+					<div class="subject">Progress</div>
+					<div class="progress-bar">
+						<div class="progress-line" value="93%" style="max-width: 93%"></div>
+					</div>
+				</div>
+				<div class="balance-card-bottom">
+					<button class="btn-top-up">
+						Decreased<i class="fa-solid fa-arrow-up"></i>
+					</button>
+					<button class="btn-transfer">
+						Increased<i class="fa-solid fa-arrow-up"></i>
+					</button>
+				</div>
+			</div>
+			<!--   === Total Balance Card Ends ===   -->
+		</div>
+		<!--   === Column 2 Ends ===   -->
+	</div>
+</section>
+
+
+  <script src="scripts/dashboard.js"></script>
+</body>
+</html>
+
+

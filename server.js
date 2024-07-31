@@ -32,13 +32,19 @@ app.use(passport.session());
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
+// Routes
 app.use('/', require('./routes/root'));
 app.use('/auth', require('./routes/auth'));
 app.use('/profile', require('./routes/profile'));
 app.use('/logout', require('./routes/logout'));
-app.use('/quizzes', require('./routes/quiz'));
 app.use('/courses', require('./routes/courses'));
+app.use('/dashboard', require('./routes/dashboard'));
+app.use('/signin', require('./routes/signin'));
+app.use('/edit', require('./routes/edit'));
+app.use('*',require('./routes/error404'));
 
 // Start Server
 const PORT = process.env.PORT || 5000;

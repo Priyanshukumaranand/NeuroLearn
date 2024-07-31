@@ -2,13 +2,8 @@ const express = require('express');
 const path = require('path');
 const router = express.Router();
 
-// Root Route
 router.get('/', (req, res) => {
-  if (req.isAuthenticated()) {
-    res.redirect('/profile');
-  } else {
-    res.sendFile(path.join(__dirname, '..', 'public', 'signin.html'));
-  }
+    res.render('signin');
 });
 
 module.exports = router;

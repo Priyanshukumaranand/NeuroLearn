@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroLearn</title>
+
+    <!-- Link to connect CSS file -->
+    <link rel="stylesheet" href="css/Home.css">
+
+    <!-- Links to connect Awesomefont -->
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/logowhite.png" alt="" href="../Home/Home.html">
+            <p>NeuroLearn</p>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Features</a></li>
+                <li><a href="/courses">Courses</a></li>
+
+                <li class="icon dropdown">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/dashboard">Dashboard</a>
+                        <a href="/edit">Settings</a>
+                        <a href="/logout">Log Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="menubtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="banner">
+                BANNER
+            </div>
+        </section>
+        <section class="homecontent">
+            <div class="contentbox">
+                <div class="content wrap">
+                    <div class="image" id="webdevelopment">
+                        <!-- <img src="assets/wddraft.jpg" alt="Web Development"> -->
+                    </div>
+                    <div class="text">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, odio. Pariatur qui incidunt,
+                            officia sit, earum iusto atque minima sunt possimus eos nisi praesentium labore dolorem
+                            omnis
+                            accusamus illo, iure modi exercitationem repudiandae optio velit! Vel cupiditate quaerat
+                            labore
+                            aliquam.</p>
+                        <button>know more</button>
+                    </div>
+                </div>
+                <div class="content rev-wrap">
+                    <div class="text">
+                        <h3>UI/UX</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, odio. Pariatur qui incidunt,
+                            officia sit, earum iusto atque minima sunt possimus eos nisi praesentium labore dolorem
+                            omnis
+                            accusamus illo, iure modi exercitationem repudiandae optio velit! Vel cupiditate quaerat
+                            labore
+                            aliquam.</p>
+                        <button>know more</button>
+                    </div>
+                    <div class="image" id="uiux"></div>
+                </div>
+                <div class="content wrap">
+                    <div class="image" id="core"></div>
+                    <div class="text">
+                        <h3>Core Subjects</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, odio. Pariatur qui incidunt,
+                            officia sit, earum iusto atque minima sunt possimus eos nisi praesentium labore dolorem
+                            omnis
+                            accusamus illo, iure modi exercitationem repudiandae optio velit! Vel cupiditate quaerat
+                            labore
+                            aliquam.</p>
+                        <button>know more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown" id="countdown">
+            <div class="container">
+
+                <div class="header">
+                    <h4 class="title">GROWING</h4>
+                    <h1 class="sub-title">Exponentially</h1>
+                </div>
+
+                <div class="counters">
+
+                    <div class="counter customer">
+                        <h2 class="number"><span class="value" data-value="210">0</span>+</h2>
+                        <p class="detail">Satisfied Customers</p>
+                    </div>
+
+                    <div class="counter project">
+                        <h2 class="number"><span class="value" data-value="15">0</span>k+</h2>
+                        <p class="detail">Projects Finised</p>
+                    </div>
+
+                    <div class="counter employee">
+                        <h2 class="number"><span class="value" data-value="110">0</span>+</h2>
+                        <p class="detail">Creative Employees</p>
+                    </div>
+
+                    <div class="counter award">
+                        <h2 class="number"><span class="value" data-value="12">0</span>+</h2>
+                        <p class="detail">International Awards</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="categories" id="about">
+            <div class="container categories__container">
+                <div class="categories__left">
+                    <h1>ABOUT US</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam dolore totam quaerat placeat
+                        delectus officiis iusto a ut perspiciatis.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                <div class="categories__right">
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                    <article class="category">
+                        <span class="category__icon"><i class="fa-solid fa-bookmark"></i></span>
+                        <h5>Blockchain</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="features" is="features">
+            <h1>FEATURES</h1>
+            <div class="featureList">
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-sliders"></i></div>
+                    <div class="featuretext">Customization</div>
+                </div>
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="featuretext">1:1 Mentorship</div>
+                </div>
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-thumbs-up"></i></div>
+                    <div class="featuretext">Recomendation</div>
+                </div>
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="featuretext">Skill Assessment</div>
+                </div>
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="featuretext">Personalised dashboard</div>
+                </div>
+                <div class="featureitem">
+                    <div class="featureicon"><i class="fa-solid fa-house-laptop"></i></div>
+                    <div class="featuretext">Remote Access</div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <section class="services section" id="services">
+            <h1 class="section__subtitle">
+                FEATURES
+            </h1>
+
+
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="fa-solid fa-chart-simple services__icon_main"></i>
+                    <h2 class="services__title">Personalised Dashboard</h2>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae?
+                    </p>
+                    <span class="services__button">
+                        See more <i class="fa-solid fa-arrow-right services__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="fa-solid fa-xmark  services__modal-close"></i>
+                            <h3 class="services__modal-title">Personalised Dashboard</h3>
+                            <p class="services__modal-description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magni nobis tempora
+                                neque reprehenderit adipisci, blanditiis, assumenda delectus similique labore nostrum
+                                quas, molestiae dolorem illum.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <i class="fa-solid fa-thumbs-up services__icon_main"></i>
+                    <h2 class="services__title">AI Recomendation</h2>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae?
+                    </p>
+                    <span class="services__button">
+                        See more <i class="fa-solid fa-arrow-right services__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="fa-solid fa-xmark  services__modal-close"></i>
+                            <h3 class="services__modal-title">AI Recomendation</h3>
+                            <p class="services__modal-description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magni nobis tempora
+                                neque reprehenderit adipisci, blanditiis, assumenda delectus similique labore nostrum
+                                quas, molestiae dolorem illum.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="services__card">
+                    <i class="fa-solid fa-house-laptop services__icon_main"></i>
+                    <h2 class="services__title">Remote Access</h2>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae?
+                    </p>
+                    <span class="services__button">
+                        See more <i class="fa-solid fa-arrow-right services__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="fa-solid fa-xmark services__modal-close"></i>
+                            <h3 class="services__modal-title">Remote Access</h3>
+                            <p class="services__modal-description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magni nobis tempora
+                                neque reprehenderit adipisci, blanditiis, assumenda delectus similique labore nostrum
+                                quas, molestiae dolorem illum.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class="fa-solid fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Lorem ipsum dolor sit amet.
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">POPULAR COURSES</h2>
+                <div class="projects-content">
+                    <div class="project">
+                        <img src="../assets/work-1.png">
+                        <div class="layer">
+                            <h3> DSA </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis doloribus doloremque
+                                nihil, velit facilis earum beatae mollitia vel quasi!</p>
+                            <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="../assets/work-2.png">
+                        <div class="layer">
+                            <h3> TOC </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur nesciunt
+                                debitis tenetur enim porro, quaerat rem illum rerum deleniti.</p>
+                            <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="../assets/work-3.png">
+                        <div class="layer">
+                            <h3> Skill Assessment </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatum vel
+                                accusantium ipsa, doloribus similique minus quidem vero! Delectus, dolores.
+                            </p>
+                            <a href="https://swedeshnamishra.github.io/Quiz_App/"><i
+                                    class="fa-solid fa-share-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="..\Courses\Courses.html" class="btn">See More</a>
+
+            </div>
+        </section>
+
+
+        <section class="testimonials-section" id="testimonials">
+            <h1>TESTIMONIALS</h1>
+            <div class="owl-carousel owl-theme testimonials-container">
+                <!-- Item1 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-1.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item1 Ends -->
+
+                <!-- Item2 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-2.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item2 Ends -->
+
+                <!-- Item3 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-3.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item3 Ends -->
+
+                <!-- Item4 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-2.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item4 Ends -->
+
+                <!-- Item5 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-1.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item5 Ends -->
+
+                <!-- Item6 Starts -->
+                <div class="item testimonial-card">
+                    <div class="test-card-body">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h2>Awesome Coding</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse.</p>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="../assets/course-3.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item6 Ends -->
+
+            </div>
+            <!-- Owl Carousel Slider Ends -->
+        </section>
+    </main>
+
+    <footer class="footer" style="background-image: url('../assets/footer-bg.png')">
+        <div class="footer-top section">
+            <div class="grid-list">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="../assets/logowhite.png" width="80" alt="NeuroLearn logo">
+                    </a>
+
+                    <p class="footer-brand-text">
+                        Lorem ipsum dolor amet cons.
+                    </p>
+
+                    <div class="wrapper">
+                        <span class="span">Address:</span>
+
+                        <address class="address">IIIT Bhubaneswar</address>
+                    </div>
+
+                    <div class="wrapper">
+                        <span class="span">Call:</span>
+
+                        <a href="tel:+91xxxxxxxxxx" class="footer-link">+91 xxxxxxxxxx</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <span class="span">Email:</span>
+
+                        <a href="bxxxxxx@iiit-bh.ac.in" class="footer-link">bxxxxxx@iiit-bh.ac.in</a>
+                    </div>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Online Platform</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Courses</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Instructor</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Events</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Instructor Profile</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Purchase Guide</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">News & Articles</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">FAQ's</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Sign In/Registration</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Coming Soon</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Contacts</p>
+
+                    <p class="footer-list-text">
+                        Enter your email to subscribe
+                    </p>
+
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+                        <button type="submit" class="btn has-before">
+                            <span class="span">Subscribe <i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </form>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">NeuroLearn</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--   *****   Owl Carousel js Link  *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="scripts/Home.js"></script>
+</body>
+
+</html>

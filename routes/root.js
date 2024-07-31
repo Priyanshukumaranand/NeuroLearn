@@ -4,9 +4,10 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   if (req.isAuthenticated()) {
-    res.redirect('/profile');
+    res.render('Home');
   } else {
-    res.sendFile(path.join(__dirname, '../public', 'signin.html'));
+    res.render('signin');
+    // res.sendFile(path.join(__dirname, '../public', 'signin.html'));
   }
 });
 

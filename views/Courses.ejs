@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <!-- Link to connect CSS file -->
+    <link rel="stylesheet" href="css/Courses.css">
+
+    <!-- Links to connect Awesomefont -->
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/logowhite.png" alt="NeuroLearn" href="/">
+            <p>NeuroLearn</p>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Features</a></li>
+                <li><a href="#">Courses</a></li>
+
+                <li class="icon dropdown">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/dashboard">Dashboard</a>
+                        <a href="/edit">Settings</a>
+                        <a href="/logout">Log Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="menubtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <ul class="subjectList">
+                <div class="searchbox">
+                    <input type="text" placeholder="Search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <hr>
+                <li>Theory of Computation</li>
+                <li>DBMS</li>
+                <li>Operating System</li>
+                <li>Computer Network</li>
+            </ul>
+        </div>
+        <div class="maincontainer">
+            <div class="displaylist">
+                <!-- <div class="course">
+                    <div class="title">
+                        <div class="text">Relational Database</div>
+                        <button class="open"><i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                    <div class="courselinkbox">
+                        <div class="coursebox">
+                            <p>&bull; Yotube</p>
+                            <div class="courselink">
+                                <a href="" id="youtube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coursebox">
+                            <p>&bull; Article</p>
+                            <div class="courselink">
+                                <a href="" id="article">
+                                    <i class="fa-regular fa-file"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coursebox">
+                            <p>&bull; Notes</p>
+                            <div class="courselink">
+                                <a href="" id="note">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="accordion">
+                    <dl>
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                        <dt><a class="accordionTitle" href="#">Relational Database</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div class="courselinkbox">
+                                <div class="coursebox">
+                                    <p>&bull; Yotube</p>
+                                    <div class="courselink">
+                                        <a href="" id="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Article</p>
+                                    <div class="courselink">
+                                        <a href="" id="article">
+                                            <i class="fa-regular fa-file"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coursebox">
+                                    <p>&bull; Notes</p>
+                                    <div class="courselink">
+                                        <a href="" id="note">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- Link to connect JS file -->
+    <script src="script/Courses.js"></script>
+
+</body>
+
+</html>
