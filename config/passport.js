@@ -11,7 +11,8 @@ const GOOGLE_CLIENT_SECRET = process.env.CLIENT_SECRET;
 passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret:GOOGLE_CLIENT_SECRET,
-  callbackURL: "http://localhost:5000/auth/google/callback",
+  // callbackURL: "http://localhost:5000/auth/google/callback",
+  callbackURL: "https://neurolearn.onrender.com/auth/google/callback",
   passReqToCallback: true,
 },
 async function(request, accessToken, refreshToken, profile, done) {
