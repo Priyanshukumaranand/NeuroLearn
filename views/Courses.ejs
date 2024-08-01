@@ -30,15 +30,21 @@
                 <li><a href="/#services">Features</a></li>
                 <li><a href="#">Courses</a></li>
 
-                <li class="icon dropdown">
-                    <a href="#"><i class="fa-solid fa-user"></i></a>
-                    <div class="dropdown-content">
-                        <a href="/dashboard">Dashboard</a>
-                        <a href="/edit">Settings</a>
-                        <a href="/logout">Log Out</a>
-                    </div>
-                </li>
-
+                
+                <% if(isAuthenticated){ %>
+                    <li class="icon dropdown">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/dashboard">Dashboard</a>
+                            <a href="/edit">Settings</a>
+                            <a href="/logout">Log Out</a>
+                        </div>
+                    </li>
+                    <% } else { %>
+                    <li class="icon dropdown">
+                      <a href="/signin"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <% } %>
             </ul>
         </nav>
         <div class="menubtn">
