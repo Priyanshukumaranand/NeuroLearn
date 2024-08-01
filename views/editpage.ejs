@@ -80,7 +80,7 @@
                 <input type="text" name="studying" class="input" value="<%= details.studying ? details.studying : " NA"
                     %>">
                 <h2>Phone number</h2>
-                <input type="text" name="phoneno" class="input" value="<%= details.phoneno ? details.phoneno : " NA"
+                <input type="tel" name="phoneno" class="input" pattern="[0-9]{10}" value="<%= details.phoneno ? details.phoneno : " NA"
                     %>">
                 <h2>Email</h2>
                 <input type="text" class="input" value="<%= details.email ? details.email : " NA" %>" disabled>
