@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
-  rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 
-   <link rel="stylesheet" href="css/editpage.css" />
+    <link rel="stylesheet" href="css/editpage.css" />
     <title>User Settings Page</title>
 
 </head>
+
 <body>
 
     <header>
@@ -32,7 +38,7 @@
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#services">Features</a></li>
                 <li><a href="/courses">Courses</a></li>
-    
+
                 <li class="icon dropdown">
                     <a href="#"><i class="fa-solid fa-user"></i></a>
                     <div class="dropdown-content">
@@ -41,7 +47,7 @@
                         <a href="/logout">Log Out</a>
                     </div>
                 </li>
-    
+
             </ul>
         </nav>
         <div class="menubtn">
@@ -49,7 +55,7 @@
         </div>
     </header>
 
-    
+
     <div class="container">
         <div class="leftbox">
             <nav>
@@ -62,38 +68,46 @@
                 <a onclick="tabs(2)" class="tab">
                     <i class="fa-solid fa-user"></i>
                 </a>
-                
+
             </nav>
         </div>
         <div class="rightbox">
-            <div class="profile tabShow">
+            <form id="form1" action="/update-profile" method="POST" class="profile tabShow">
                 <h1>Personal Info</h1>
                 <h2>Full Name</h2>
-                <input type="text" class="input" value="<%= details.name ? details.name : "NA" %>">
+                <input type="text" name="name" class="input" value="<%= details.name ? details.name : " NA" %>">
                 <h2>Studing</h2>
-                <input type="text" class="input" value="<%= details.studying ? details.studying : "NA" %>">
+                <input type="text" name="studying" class="input" value="<%= details.studying ? details.studying : " NA"
+                    %>">
                 <h2>Phone number</h2>
-                <input type="text" class="input" value="<%= details.phoneno ? details.phoneno : "NA" %>">
+                <input type="text" name="phoneno" class="input" value="<%= details.phoneno ? details.phoneno : " NA"
+                    %>">
                 <h2>Email</h2>
-                <input type="text" class="input" value="<%= details.email ? details.email : "NA" %>" disabled>
+                <input type="text" class="input" value="<%= details.email ? details.email : " NA" %>" disabled>
                 <h2>Address</h2>
-                <input type="text" class="input" value="<%= details.address ? details.address : "NA" %>">
-                <button class="btn">Update</button>
-            </div>
-            <div class="profile tabShow">
+                <input type="text" name="address" class="input" value="<%= details.address ? details.address : " NA"
+                    %>">
+                <button class="btn" type="submit">Update</button>
+            </form>
+            <form id="form2" action="/update-skills" method="POST" class="profile tabShow">
                 <h1>Skills</h1>
                 <h2>Skill 1</h2>
-                <input type="text" class="input" value="Skill">
+                <input name="skill1" type="text" class="input"
+                    value="<%= details.skills?.skill1 ? details.skills?.skill1 : " skill1" %>">
                 <h2>Skill 2</h2>
-                <input type="text" class="input" value="Skill">
+                <input name="skill2" type="text" class="input"
+                    value="<%= details.skills?.skill2 ? details.skills?.skill2 : " skill2" %>">
                 <h2>Skill 3</h2>
-                <input type="text" class="input" value="Skill">
+                <input name="skill3" type="text" class="input"
+                    value="<%= details.skills?.skill3 ? details.skills?.skill3 : " skill3" %>">
                 <h2>Skill 4</h2>
-                <input type="text" class="input" value="Skill">
+                <input name="skill4" type="text" class="input"
+                    value="<%= details.skills?.skill4 ? details.skills?.skill4 : " skill4" %>">
                 <h2>Skill 5</h2>
-                <input type="text" class="input" value="Skill">
-                <button class="btn">Update</button>
-            </div>
+                <input name="skill5" type="text" class="input"
+                    value="<%= details.skills?.skill5 ? details.skills?.skill5 : " skill5" %>">
+                <button class="btn" type="submit">Update</button>
+            </form>
             <div class="profile tabShow">
                 <h1>Upload</h1>
 
@@ -101,7 +115,8 @@
                     <label for="profilePicture" id="profile_pic">Profile Picture</label>
                     <div class="upload-container" id="uploadContainer">
                         <input type="file" id="profilePicture" name="profilePicture" accept="image/*" hidden>
-                        <img id="profileImage" src="../assets/course-3.jpg" alt="Profile Picture" class="profile-images">
+                        <img id="profileImage" src="../assets/course-3.jpg" alt="Profile Picture"
+                            class="profile-images">
                         <p class="upload-instructions">Drag here to upload</p>
                     </div>
                     <div class="upload-options">
@@ -114,18 +129,19 @@
                 <!-- <h2>Full Name</h2>
                 <input type="text" class="input" value="SDM"> -->
                 <h2>Designation</h2>
-                <input type="text" class="input" value="Designation">
+                <input type="text" class="input" value="<%= details.designation ? details.designation : " designation"
+                    %>">
                 <button class="btn">Update</button>
             </div>
-            
+
         </div>
     </div>
- 
-    
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <script src="scripts/editpage.js"></script>
-
 </body>
+
 </html>

@@ -10,7 +10,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cookieParser());
-
+app.use(express.urlencoded({ extended: true }))
 // Connect to MongoDB
 mongoose.connect(process.env.DB_URI);
 
@@ -44,6 +44,8 @@ app.use('/courses', require('./routes/courses'));
 app.use('/dashboard', require('./routes/dashboard'));
 app.use('/signin', require('./routes/signin'));
 app.use('/edit', require('./routes/edit'));
+app.use('/update-profile', require('./routes/update-profile'));
+app.use('/update-skills', require('./routes/update-skills'));
 app.use('*',require('./routes/error404'));
 
 // Start Server

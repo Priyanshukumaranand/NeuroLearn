@@ -10,5 +10,4 @@ router.get('/', (req, res) => {
         res.redirect('/signin');
       }
 });
-
 module.exports = router;

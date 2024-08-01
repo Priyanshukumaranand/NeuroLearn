@@ -95,7 +95,7 @@
     <div class="left-container">
       <img src="<%= details.avatar ? details.avatar : "../assets/DP.jpeg" %>" alt="Profile Image">
       <h2 class="gradienttext"><%= details.name ? details.name : "NA" %></h2>
-      <p>Web Developer</p>
+      <p><%= details.designation ? details.designation : "Designation NA" %></p>
       <div class="icon">
         <a href="#"> <i class="fa-brands fa-github" ></i></a>
         <a href="#"> <i class="fa-brands fa-linkedin" ></i></a>
@@ -111,7 +111,7 @@
             </tr>
         <tr>
           <td>Studing :</td>
-          <td><%= details.studying ? details.studying : "Computer Science" %></td>
+          <td><%= details.studying ? details.studying : "NA" %></td>
         </tr>
         <tr>
           <td>Mobile :</td>
@@ -124,7 +124,7 @@
         </tr>
         <tr>
           <td>Address :</td>
-          <td><%= details.address ? details.address : "IIIT,Bhubaneswar." %></td>
+          <td><%= details.address ? details.address : "NA" %></td>
         </tr>
       </table>
   </div>
@@ -135,7 +135,7 @@
     <h3 class="skills-header">MY SKILLS</h3>
     <div class="skills-container">
         <div class="skill-container">
-            <p>HTML</p>
+            <p><%= details.skills.skill1 ? details.skills.skill1 : "NA" %></p>
             <div class="percentage html-percentage">90%</div>
             <div class="bar">
                 <span class="html"></span>
@@ -143,7 +143,7 @@
         </div>
 
         <div class="skill-container">
-            <p>CSS</p>
+            <p><%= details.skills.skill2 ? details.skills.skill2 : "NA" %></p>
             <div class="percentage css-percentage">90%</div>
             <div class="bar">
                 <span class="css"></span>
@@ -151,7 +151,7 @@
         </div>
 
         <div class="skill-container">
-            <p>JavaScript</p>
+            <p><%= details.skills.skill3 ? details.skills.skill3 : "NA" %></p>
             <div class="percentage javascript-percentage">80%</div>
             <div class="bar">
                 <span class="javascript"></span>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="skill-container">
-            <p>React.JS</p>
+            <p><%= details.skills.skill4 ? details.skills.skill4 : "NA" %></p>
             <div class="percentage react-percentage">70%</div>
             <div class="bar">
                 <span class="react"></span>
@@ -167,7 +167,7 @@
         </div>
 
         <div class="skill-container">
-            <p>Node.JS</p>
+            <p><%= details.skills.skill5 ? details.skills.skill5 : "NA" %></p>
             <div class="percentage node-percentage">50%</div>
             <div class="bar">
                 <span class="node"></span>
