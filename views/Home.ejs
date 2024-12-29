@@ -72,6 +72,7 @@
                     <div class="image" id="webdevelopment">
                         <!-- <img src="assets/wddraft.jpg" alt="Web Development"> -->
                     </div>
+                    
                     <div class="text">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, odio. Pariatur qui incidunt,
@@ -779,7 +780,26 @@
 
         </div>
     </footer>
-
+    <button id="chatbotButton" class="chatbot-button">Chat with us</button>
+    <div id="chatbotContainer" class="chatbot-container" style="display: none;">
+        <iframe
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/6a15d469-11f7-4084-abf5-9ad315523b97">
+        </iframe>
+    </div>
+ 
+    <script>
+        document.getElementById('chatbotButton').addEventListener('click', function() {
+            var chatbotContainer = document.getElementById('chatbotContainer');
+            if (chatbotContainer.style.display === 'none') {
+                chatbotContainer.style.display = 'block';
+            } else {
+                chatbotContainer.style.display = 'none';
+            }
+        });
+    </script>
     <!--   *****   JQuery Link   *****   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
