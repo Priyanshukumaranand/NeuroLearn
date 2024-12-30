@@ -49,10 +49,10 @@
                         </div>
                     </li>
                     <% } else { %>
-                    <li class="icon dropdown">
-                      <a href="/signin"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <% } %>
+                        <li class="icon dropdown">
+                            <a href="/signin"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <% } %>
             </ul>
         </nav>
         <div class="menubtn">
@@ -73,7 +73,7 @@
                     <div class="image" id="webdevelopment">
                         <!-- <img src="assets/wddraft.jpg" alt="Web Development"> -->
                     </div>
-                    
+
                     <div class="text">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, odio. Pariatur qui incidunt,
@@ -618,6 +618,7 @@
             </div>
             <!-- Owl Carousel Slider Ends -->
         </section>
+       
     </main>
 
     <footer class="footer" style="background-image: url('../assets/footer-bg.png')">
@@ -781,26 +782,13 @@
 
         </div>
     </footer>
-    <button id="chatbotButton" class="chatbot-button">Chat with us</button>
-    <div id="chatbotContainer" class="chatbot-container" style="display: none;">
-        <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/6a15d469-11f7-4084-abf5-9ad315523b97">
-        </iframe>
-    </div>
- 
-    <script>
-        document.getElementById('chatbotButton').addEventListener('click', function() {
-            var chatbotContainer = document.getElementById('chatbotContainer');
-            if (chatbotContainer.style.display === 'none') {
-                chatbotContainer.style.display = 'block';
-            } else {
-                chatbotContainer.style.display = 'none';
-            }
-        });
-    </script>
+    
+    <!-- BOT -->
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger chat-icon="https:&#x2F;&#x2F;neurolearn.onrender.com&#x2F;assets&#x2F;logowhite.png"
+            intent="WELCOME" chat-title="NeurolearnBot" agent-id="6a15d469-11f7-4084-abf5-9ad315523b97"
+            language-code="en"></df-messenger>
+
     <!--   *****   JQuery Link   *****   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
