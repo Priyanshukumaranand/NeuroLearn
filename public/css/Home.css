@@ -210,11 +210,16 @@ header .menubtn {
 }
 
 .hero {
+    height: 90vh;
     width: 100%;
-    padding: 50px;
-    background: #233748;
+
 }
 
+.banner img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
 .banner {
     height: 555px;
     border: 10px solid #1ABC9C;
@@ -483,12 +488,11 @@ header .menubtn {
     gap: 1.2rem;
     min-width: 600px;
 }
-
 .category {
     background-color: #434753;
     padding: 2rem;
     border-radius: 2rem;
-    min-width: 250px;
+    min-width: 200px;
     transition: all 400ms ease;
 }
 
